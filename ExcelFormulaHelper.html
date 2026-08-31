@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Excel Formula Helper - Free Excel Formula Generator</title>
+
+<meta name="description"
+content="Free Excel Formula Helper. Find XLOOKUP, VLOOKUP, SUMIFS, COUNTIFS, IF and other Excel formulas from simple questions.">
+
+<style>
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f5f7fb;
+    color:#17202a;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:0 20px;
+}
+
+
+/* HEADER */
+
+header{
+    background:#111827;
+    color:white;
+    padding:18px 0;
+}
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:25px;
+    font-weight:800;
+}
+
+.logo span{
+    color:#22c55e;
+}
+
+.header-text{
+    color:#cbd5e1;
+    font-size:13px;
+}
+
+
+/* HERO */
+
+.hero{
+    text-align:center;
+    padding:55px 0 35px;
+}
+
+.hero h1{
+    font-size:40px;
+    margin:0 0 12px;
+}
+
+.hero h1 span{
+    color:#16a34a;
+}
+
+.hero p{
+    font-size:17px;
+    color:#64748b;
+    max-width:700px;
+    margin:auto;
+    line-height:1.6;
+}
+
+
+/* SEARCH */
+
+.search-box{
+    background:white;
+    padding:22px;
+    border-radius:16px;
+    box-shadow:0 5px 25px rgba(0,0,0,.07);
+    border:1px solid #e5e7eb;
+}
+
+textarea{
+    width:100%;
+    min-height:120px;
+    padding:16px;
+    border:1px solid #d1d5db;
+    border-radius:10px;
+    resize:vertical;
+    font-size:16px;
+    font-family:Arial;
+    outline:none;
+}
+
+textarea:focus{
+    border-color:#2563eb;
+}
+
+.generate{
+    width:100%;
+    margin-top:12px;
+    padding:14px;
+    border:0;
+    border-radius:10px;
+    background:#2563eb;
+    color:white;
+    font-size:16px;
+    font-weight:700;
+    cursor:pointer;
+}
+
+.generate:hover{
+    background:#1d4ed8;
+}
+
+
+/* EXAMPLES */
+
+.examples{
+    margin-top:15px;
+    color:#64748b;
+    font-size:13px;
+}
+
+.example{
+    display:inline-block;
+    margin:5px 4px 0 0;
+    padding:7px 10px;
+    background:#f1f5f9;
+    border-radius:20px;
+    cursor:pointer;
+}
+
+.example:hover{
+    background:#e2e8f0;
+}
+
+
+/* RESULT */
+
+.result{
+    display:none;
+    margin-top:25px;
+}
+
+.card{
+    background:white;
+    border:1px solid #e5e7eb;
+    border-radius:14px;
+    padding:22px;
+    margin-bottom:15px;
+    box-shadow:0 3px 15px rgba(0,0,0,.04);
+}
+
+.card h2{
+    margin-top:0;
+    font-size:19px;
+}
+
+.formula-box{
+    background:#111827;
+    color:#f8fafc;
+    padding:18px;
+    border-radius:10px;
+    font-family:Consolas,monospace;
+    font-size:16px;
+    overflow-x:auto;
+    white-space:nowrap;
+}
+
+.copy{
+    margin-top:10px;
+    padding:9px 14px;
+    border:0;
+    border-radius:8px;
+    background:#16a34a;
+    color:white;
+    cursor:pointer;
+    font-weight:700;
+}
+
+.copy:hover{
+    background:#15803d;
+}
+
+.explanation{
+    color:#475569;
+    line-height:1.7;
+}
+
+.tag{
+    display:inline-block;
+    padding:5px 9px;
+    background:#dcfce7;
+    color:#166534;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:700;
+}
+
+
+/* POPULAR */
+
+.popular{
+    margin-top:40px;
+}
+
+.popular h2{
+    text-align:center;
+}
+
+.tools{
+    display:grid;
+    grid-template-columns:
+        repeat(4,1fr);
+    gap:12px;
+    margin-top:20px;
+}
+
+.tool{
+    background:white;
+    border:1px solid #e5e7eb;
+    padding:18px;
+    border-radius:12px;
+    text-align:center;
+    cursor:pointer;
+    font-weight:700;
+}
+
+.tool:hover{
+    border-color:#2563eb;
+    background:#f8fafc;
+}
+
+
+/* FOOTER */
+
+footer{
+    margin-top:60px;
+    padding:30px 0;
+    background:#111827;
+    color:#94a3b8;
+    text-align:center;
+    font-size:13px;
+}
+
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+    .hero h1{
+        font-size:30px;
+    }
+
+    .header-text{
+        display:none;
+    }
+
+    .tools{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="container header">
+
+<div class="logo">
+Excel<span>Formula</span>Helper
+</div>
+
+<div class="header-text">
+Free Excel Formula Generator
+</div>
+
+</div>
+
+</header>
+
+
+<main class="container">
+
+
+<section class="hero">
+
+<h1>
+What do you want to <span>do in Excel?</span>
+</h1>
+
+<p>
+Describe your Excel problem in simple English.
+We'll suggest the formula, explain it, and give you an alternative.
+</p>
+
+</section>
+
+
+<section class="search-box">
+
+<textarea
+id="question"
+placeholder="Example: I have an ID in A2 and want to find the amount from column B of another sheet..."
+></textarea>
+
+
+<button
+class="generate"
+onclick="generateFormula()">
+
+Generate Excel Formula
+
+</button>
+
+
+<div class="examples">
+
+Try:
+
+<span
+class="example"
+onclick="exampleText('I want to find a matching ID from another sheet')">
+
+XLOOKUP
+
+</span>
+
+<span
+class="example"
+onclick="exampleText('I want to add amounts based on ID and month')">
+
+SUMIFS
+
+</span>
+
+<span
+class="example"
+onclick="exampleText('I want to count records based on two conditions')">
+
+COUNTIFS
+
+</span>
+
+<span
+class="example"
+onclick="exampleText('I want to check if a value exists in another column')">
+
+IF
+
+</span>
+
+</div>
+
+</section>
+
+
+<section
+id="result"
+class="result">
+
+
+<div class="card">
+
+<h2>
+Recommended Formula
+</h2>
+
+<span
+id="formulaType"
+class="tag">
+XLOOKUP
+</span>
+
+<br><br>
+
+
+<div
+id="formula"
+class="formula-box">
+</div>
+
+
+<button
+class="copy"
+onclick="copyFormula()">
+
+Copy Formula
+
+</button>
+
+</div>
+
+
+<div class="card">
+
+<h2>
+What this formula does
+</h2>
+
+<p
+id="explanation"
+class="explanation">
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h2>
+Alternative Formula
+</h2>
+
+<div
+id="alternative"
+class="formula-box">
+</div>
+
+</div>
+
+
+</section>
+
+
+<section class="popular">
+
+<h2>
+Popular Excel Formulas
+</h2>
+
+
+<div class="tools">
+
+
+<div
+class="tool"
+onclick="exampleText('I want to find a matching value from another sheet')">
+
+XLOOKUP
+
+</div>
+
+
+<div
+class="tool"
+onclick="exampleText('I want to find a value using VLOOKUP')">
+
+VLOOKUP
+
+</div>
+
+
+<div
+class="tool"
+onclick="exampleText('I want to sum values based on multiple conditions')">
+
+SUMIFS
+
+</div>
+
+
+<div
+class="tool"
+onclick="exampleText('I want to count values based on multiple conditions')">
+
+COUNTIFS
+
+</div>
+
+
+<div
+class="tool"
+onclick="exampleText('I want to check whether a value exists')">
+
+IF
+
+</div>
+
+
+<div
+class="tool"
+onclick="exampleText('I want to prevent an Excel formula error')">
+
+IFERROR
+
+</div>
+
+
+<div
+class="tool"
+onclick="exampleText('I want to compare two columns')">
+
+Compare Columns
+
+</div>
+
+
+<div
+class="tool"
+onclick="exampleText('I want to remove extra spaces from text')">
+
+TRIM
+
+</div>
+
+
+</div>
+
+</section>
+
+
+</main>
+
+
+<footer>
+
+Excel Formula Helper © 2026
+
+<br><br>
+
+Free Excel formula tools for everyone.
+
+</footer>
+
+
+<script>
+
+
+/* ==========================================
+   EXAMPLES
+========================================== */
+
+function exampleText(text){
+
+    document.getElementById(
+        "question"
+    ).value = text;
+
+    generateFormula();
+
+}
+
+
+/* ==========================================
+   GENERATE FORMULA
+========================================== */
+
+function generateFormula(){
+
+    const question =
+        document
+        .getElementById("question")
+        .value
+        .toLowerCase()
+        .trim();
+
+
+    if(!question){
+
+        alert(
+            "Please describe what you want to do in Excel."
+        );
+
+        return;
+
+    }
+
+
+    let type =
+        "XLOOKUP";
+
+    let formula =
+        '=XLOOKUP(A2,Sheet2!A:A,Sheet2!B:B,"")';
+
+    let alternative =
+        '=IFERROR(INDEX(Sheet2!B:B,MATCH(A2,Sheet2!A:A,0)),"")';
+
+    let explanation =
+        "Looks for the value in A2 in column A of Sheet2 and returns the matching value from column B.";
+
+
+    /* XLOOKUP */
+
+    if(
+        question.includes("xlookup") ||
+        question.includes("matching") ||
+        question.includes("match") ||
+        question.includes("find")
+    ){
+
+        type =
+            "XLOOKUP";
+
+        formula =
+            '=XLOOKUP(A2,Sheet2!A:A,Sheet2!B:B,"")';
+
+        alternative =
+            '=IFERROR(INDEX(Sheet2!B:B,MATCH(A2,Sheet2!A:A,0)),"")';
+
+        explanation =
+            "Looks for the value in A2 in Sheet2 column A and returns the corresponding value from Sheet2 column B.";
+
+    }
+
+
+    /* VLOOKUP */
+
+    if(
+        question.includes("vlookup")
+    ){
+
+        type =
+            "VLOOKUP";
+
+        formula =
+            '=IFERROR(VLOOKUP(A2,Sheet2!A:B,2,FALSE),"")';
+
+        alternative =
+            '=XLOOKUP(A2,Sheet2!A:A,Sheet2!B:B,"")';
+
+        explanation =
+            "Searches for A2 in the first column of Sheet2 and returns the corresponding value from the second column.";
+
+    }
+
+
+    /* SUMIFS */
+
+    if(
+        question.includes("sum") ||
+        question.includes("add")
+    ){
+
+        type =
+            "SUMIFS";
+
+        formula =
+            '=SUMIFS(Sheet2!C:C,Sheet2!A:A,A2,Sheet2!B:B,B2)';
+
+        alternative =
+            '=SUMPRODUCT((Sheet2!A:A=A2)*(Sheet2!B:B=B2)*Sheet2!C:C)';
+
+        explanation =
+            "Adds values from Sheet2 column C when the ID matches A2 and the second condition matches B2.";
+
+    }
+
+
+    /* COUNTIFS */
+
+    if(
+        question.includes("count")
+    ){
+
+        type =
+            "COUNTIFS";
+
+        formula =
+            '=COUNTIFS(Sheet2!A:A,A2,Sheet2!B:B,B2)';
+
+        alternative =
+            '=SUMPRODUCT((Sheet2!A:A=A2)*(Sheet2!B:B=B2))';
+
+        explanation =
+            "Counts rows where the value in Sheet2 column A matches A2 and column B matches B2.";
+
+    }
+
+
+    /* IF */
+
+    if(
+        question.startsWith("if ") ||
+        question.includes("check whether") ||
+        question.includes("check if")
+    ){
+
+        type =
+            "IF";
+
+        formula =
+            '=IF(A2=B2,"Yes","No")';
+
+        alternative =
+            '=IF(EXACT(A2,B2),"Yes","No")';
+
+        explanation =
+            "Checks whether two values are equal and returns Yes or No.";
+
+    }
+
+
+    /* IFERROR */
+
+    if(
+        question.includes("error") ||
+        question.includes("prevent")
+    ){
+
+        type =
+            "IFERROR";
+
+        formula =
+            '=IFERROR(A2/B2,"")';
+
+        alternative =
+            '=IF(ISERROR(A2/B2),"",A2/B2)';
+
+        explanation =
+            "Prevents an Excel error from being displayed and returns a blank result instead.";
+
+    }
+
+
+    /* TRIM */
+
+    if(
+        question.includes("space") ||
+        question.includes("spaces")
+    ){
+
+        type =
+            "TRIM";
+
+        formula =
+            '=TRIM(A2)';
+
+        alternative =
+            '=CLEAN(TRIM(A2))';
+
+        explanation =
+            "Removes extra spaces from text. This is especially useful when data copied from another system contains unwanted spaces.";
+
+    }
+
+
+    /* DISPLAY */
+
+    document.getElementById(
+        "formulaType"
+    ).textContent =
+        type;
+
+
+    document.getElementById(
+        "formula"
+    ).textContent =
+        formula;
+
+
+    document.getElementById(
+        "alternative"
+    ).textContent =
+        alternative;
+
+
+    document.getElementById(
+        "explanation"
+    ).textContent =
+        explanation;
+
+
+    document.getElementById(
+        "result"
+    ).style.display =
+        "block";
+
+
+    document.getElementById(
+        "result"
+    ).scrollIntoView({
+        behavior:"smooth"
+    });
+
+}
+
+
+/* ==========================================
+   COPY
+========================================== */
+
+function copyFormula(){
+
+    const formula =
+        document.getElementById(
+            "formula"
+        ).textContent;
+
+
+    navigator.clipboard
+    .writeText(formula)
+    .then(
+        function(){
+
+            alert(
+                "Formula copied!"
+            );
+
+        }
+    );
+
+}
+
+</script>
+
+
+</body>
+
+</html>
