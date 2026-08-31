@@ -1,147 +1,351 @@
-<section style="margin:40px 0;padding:30px;background:#ffffff;border:1px solid #e5e7eb;border-radius:15px;">
-    <h2 style="font-size:28px;margin-top:0;color:#17202a;">
-        Popular Excel Formula Guides
-    </h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Excel Formula Helper - Free Excel Formula Generator</title>
+<meta name="description" content="Free Excel Formula Helper with practical Excel formulas for XLOOKUP, SUMIFS, COUNTIFS, dates, text, duplicates, comparisons and large datasets.">
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f5f7fb;color:#17202a}
+.container{max-width:1150px;margin:auto;padding:0 20px}
+header{background:#111827;color:#fff;padding:18px 0}
+.header{display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:25px;font-weight:800}.logo span{color:#22c55e}
+.header-text{color:#cbd5e1;font-size:13px}
+.hero{text-align:center;padding:48px 0 30px}
+.hero h1{font-size:40px;margin:0 0 12px}.hero h1 span{color:#16a34a}
+.hero p{font-size:17px;color:#64748b;max-width:760px;margin:auto;line-height:1.6}
+.search-box{background:#fff;padding:22px;border-radius:16px;box-shadow:0 5px 25px rgba(0,0,0,.07);border:1px solid #e5e7eb}
+textarea{width:100%;min-height:110px;padding:16px;border:1px solid #d1d5db;border-radius:10px;resize:vertical;font-size:16px;font-family:Arial;outline:none}
+textarea:focus{border-color:#2563eb}
+.generate{width:100%;margin-top:12px;padding:14px;border:0;border-radius:10px;background:#2563eb;color:#fff;font-size:16px;font-weight:700;cursor:pointer}
+.generate:hover{background:#1d4ed8}
+.examples{margin-top:15px;color:#64748b;font-size:13px}
+.example{display:inline-block;margin:5px 4px 0 0;padding:7px 10px;background:#f1f5f9;border-radius:20px;cursor:pointer}
+.example:hover{background:#e2e8f0}
+.result{display:none;margin-top:25px}
+.card{background:#fff;border:1px solid #e5e7eb;border-radius:14px;padding:22px;margin-bottom:15px;box-shadow:0 3px 15px rgba(0,0,0,.04)}
+.card h2{margin-top:0;font-size:19px}
+.formula-box{background:#111827;color:#f8fafc;padding:18px;border-radius:10px;font-family:Consolas,monospace;font-size:16px;overflow-x:auto;white-space:pre-wrap;word-break:break-word}
+.copy{margin-top:10px;padding:9px 14px;border:0;border-radius:8px;background:#16a34a;color:#fff;cursor:pointer;font-weight:700}
+.copy:hover{background:#15803d}
+.explanation{color:#475569;line-height:1.7}
+.tag{display:inline-block;padding:5px 9px;background:#dcfce7;color:#166534;border-radius:20px;font-size:12px;font-weight:700}
+.popular{margin-top:40px}.popular h2{text-align:center}
+.category-bar{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:18px 0}
+.cat{padding:8px 12px;border:1px solid #dbe3ec;background:#fff;border-radius:20px;cursor:pointer}
+.cat.active,.cat:hover{background:#e8f0ff;border-color:#2563eb}
+.tools{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:20px}
+.tool{background:#fff;border:1px solid #e5e7eb;padding:16px;border-radius:12px;text-align:left;cursor:pointer}
+.tool strong{display:block;margin-bottom:6px}.tool small{color:#64748b;line-height:1.4}
+.tool:hover{border-color:#2563eb;background:#f8fafc}
+.notice{background:#fff7ed;border:1px solid #fed7aa;color:#9a3412;padding:15px;border-radius:12px;margin-top:25px;line-height:1.5}
+footer{margin-top:60px;padding:30px 0;background:#111827;color:#94a3b8;text-align:center;font-size:13px}
+@media(max-width:800px){.tools{grid-template-columns:repeat(2,1fr)}.hero h1{font-size:32px}}
+@media(max-width:520px){.tools{grid-template-columns:1fr}.header-text{display:none}.hero h1{font-size:28px}}
+</style>
+</head>
+<body>
+<header><div class="container header">
+<div class="logo">Excel<span>Formula</span>Helper</div>
+<div class="header-text">100+ practical Excel formulas • Free</div>
+</div></header>
 
-    <p style="color:#475569;line-height:1.7;">
-        Learn practical Excel formulas with simple examples and explanations.
-        These guides cover common lookup, calculation, logic and data-management tasks.
-    </p>
-
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px;margin-top:20px;">
-
-        <a href="xlookup-formula.html"
-           style="padding:18px;border:1px solid #e5e7eb;border-radius:10px;text-decoration:none;">
-            <strong>XLOOKUP Formula</strong><br>
-            <span style="color:#64748b;">Find matching data easily</span>
-        </a>
-
-        <a href="vlookup-formula.html"
-           style="padding:18px;border:1px solid #e5e7eb;border-radius:10px;text-decoration:none;">
-            <strong>VLOOKUP Formula</strong><br>
-            <span style="color:#64748b;">Search and return data</span>
-        </a>
-
-        <a href="sumifs-formula.html"
-           style="padding:18px;border:1px solid #e5e7eb;border-radius:10px;text-decoration:none;">
-            <strong>SUMIFS Formula</strong><br>
-            <span style="color:#64748b;">Sum using multiple conditions</span>
-        </a>
-
-        <a href="countifs-formula.html"
-           style="padding:18px;border:1px solid #e5e7eb;border-radius:10px;text-decoration:none;">
-            <strong>COUNTIFS Formula</strong><br>
-            <span style="color:#64748b;">Count matching records</span>
-        </a>
-
-        <a href="if-ifs-formula.html"
-           style="padding:18px;border:1px solid #e5e7eb;border-radius:10px;text-decoration:none;">
-            <strong>IF / IFS Formula</strong><br>
-            <span style="color:#64748b;">Create conditional results</span>
-        </a>
-
-        <a href="index-match-formula.html"
-           style="padding:18px;border:1px solid #e5e7eb;border-radius:10px;text-decoration:none;">
-            <strong>INDEX MATCH</strong><br>
-            <span style="color:#64748b;">Flexible Excel lookups</span>
-        </a>
-
-        <a href="iferror-formula.html"
-           style="padding:18px;border:1px solid #e5e7eb;border-radius:10px;text-decoration:none;">
-            <strong>IFERROR Formula</strong><br>
-            <span style="color:#64748b;">Handle formula errors</span>
-        </a>
-
-        <a href="unique-formula.html"
-           style="padding:18px;border:1px solid #e5e7eb;border-radius:10px;text-decoration:none;">
-            <strong>UNIQUE Formula</strong><br>
-            <span style="color:#64748b;">Extract unique values</span>
-        </a>
-
-        <a href="filter-formula.html"
-           style="padding:18px;border:1px solid #e5e7eb;border-radius:10px;text-decoration:none;">
-            <strong>FILTER Formula</strong><br>
-            <span style="color:#64748b;">Filter data dynamically</span>
-        </a>
-
-        <a href="compare-two-columns.html"
-           style="padding:18px;border:1px solid #e5e7eb;border-radius:10px;text-decoration:none;">
-            <strong>Compare Two Columns</strong><br>
-            <span style="color:#64748b;">Find matches and missing values</span>
-        </a>
-
-    </div>
-</section>
-<!-- Excel Formula Helper - Helpful Information -->
-
-<section style="max-width:1100px;margin:45px auto 30px;padding:30px 20px;background:#ffffff;border:1px solid #e5e7eb;border-radius:15px;">
-
-    <h2 style="font-size:28px;color:#17202a;margin:0 0 12px;">
-        How to Use Excel Formula Helper
-    </h2>
-
-    <p style="color:#475569;line-height:1.7;margin-bottom:25px;">
-        Excel Formula Helper helps you find practical Excel formulas for common
-        spreadsheet tasks. Describe what you want to do in simple language and
-        use the suggested formula as a starting point in your Excel workbook.
-    </p>
-
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;">
-
-        <div style="padding:20px;border:1px solid #e5e7eb;border-radius:10px;">
-            <h3 style="margin:0 0 8px;color:#17202a;">1. Describe your task</h3>
-            <p style="margin:0;color:#64748b;line-height:1.6;">
-                Explain what you want Excel to calculate or find.
-            </p>
-        </div>
-
-        <div style="padding:20px;border:1px solid #e5e7eb;border-radius:10px;">
-            <h3 style="margin:0 0 8px;color:#17202a;">2. Generate a formula</h3>
-            <p style="margin:0;color:#64748b;line-height:1.6;">
-                Review the suggested Excel formula and understand what it does.
-            </p>
-        </div>
-
-        <div style="padding:20px;border:1px solid #e5e7eb;border-radius:10px;">
-            <h3 style="margin:0 0 8px;color:#17202a;">3. Copy the formula</h3>
-            <p style="margin:0;color:#64748b;line-height:1.6;">
-                Copy the formula and paste it into your Excel worksheet.
-            </p>
-        </div>
-
-        <div style="padding:20px;border:1px solid #e5e7eb;border-radius:10px;">
-            <h3 style="margin:0 0 8px;color:#17202a;">4. Check your result</h3>
-            <p style="margin:0;color:#64748b;line-height:1.6;">
-                Test the formula with your actual spreadsheet data and adjust
-                cell references when necessary.
-            </p>
-        </div>
-
-    </div>
+<main class="container">
+<section class="hero">
+<h1>What do you want to <span>do in Excel?</span></h1>
+<p>Describe your Excel problem in simple English. Get a practical formula, explanation and alternative formula instantly.</p>
 </section>
 
-
-<section style="max-width:1100px;margin:25px auto 45px;padding:30px 20px;background:#ffffff;border:1px solid #e5e7eb;border-radius:15px;">
-
-    <h2 style="font-size:28px;color:#17202a;margin:0 0 12px;">
-        Useful Excel Formula Tips
-    </h2>
-
-    <p style="color:#475569;line-height:1.7;">
-        These simple practices can make Excel formulas easier to build,
-        understand and maintain.
-    </p>
-
-    <ul style="color:#475569;line-height:1.9;padding-left:25px;">
-        <li>Use absolute references such as <strong>$A$1</strong> when a cell reference should not change.</li>
-        <li>Use <strong>IFERROR</strong> when you need to display a useful result instead of a formula error.</li>
-        <li>Use <strong>XLOOKUP</strong> for flexible lookup tasks in supported Excel versions.</li>
-        <li>Use <strong>SUMIFS</strong> and <strong>COUNTIFS</strong> when your calculation depends on multiple conditions.</li>
-        <li>Use <strong>FILTER</strong> and <strong>UNIQUE</strong> to work with dynamic lists in supported Excel versions.</li>
-        <li>Check your cell ranges carefully when working with large datasets.</li>
-        <li>Test formulas with a small sample of data before applying them to a large workbook.</li>
-    </ul>
-
+<section class="search-box">
+<textarea id="question" placeholder="Example: I have an ID in A3 and want to find the amount from column BU of MEDD based on ID in column DP..."></textarea>
+<button class="generate" onclick="generateFormula()">Generate Excel Formula</button>
+<div class="examples">Try:
+<span class="example" onclick="exampleText('find a matching ID from another sheet')">XLOOKUP</span>
+<span class="example" onclick="exampleText('sum amounts based on ID and month')">SUMIFS</span>
+<span class="example" onclick="exampleText('count records based on two conditions')">COUNTIFS</span>
+<span class="example" onclick="exampleText('compare two columns and show missing values')">Compare</span>
+<span class="example" onclick="exampleText('remove extra spaces')">TRIM</span>
+</div>
 </section>
+
+<section id="result" class="result">
+<div class="card">
+<h2>Recommended Formula</h2>
+<span id="formulaType" class="tag">XLOOKUP</span><br><br>
+<div id="formula" class="formula-box"></div>
+<button class="copy" onclick="copyFormula('formula')">Copy Formula</button>
+</div>
+<div class="card"><h2>What this formula does</h2><p id="explanation" class="explanation"></p></div>
+<div class="card"><h2>Alternative Formula</h2><div id="alternative" class="formula-box"></div><button class="copy" onclick="copyFormula('alternative')">Copy Alternative</button></div>
+</section>
+
+<section class="popular">
+<h2>100+ Practical Excel Formula Helpers</h2>
+<div class="category-bar" id="categories"></div>
+<div class="tools" id="tools"></div>
+</section>
+
+<div class="notice"><strong>Tip:</strong> Replace the example cell, sheet and column references with your actual ranges. For very large datasets, prefer bounded ranges or Excel Tables where practical.</div>
+</main>
+
+<footer>Excel Formula Helper © 2026<br><br>Free Excel formula tools for everyone. Formulas are examples and should be checked against your workbook.</footer>
+
+<script>
+const formulas = [
+["XLOOKUP","Lookup","Find a matching value from another sheet",'=XLOOKUP(A2,Sheet2!A:A,Sheet2!B:B,"")','=IFERROR(INDEX(Sheet2!B:B,MATCH(A2,Sheet2!A:A,0)),"")',"Finds A2 in Sheet2 column A and returns the matching value from column B."],
+["XLOOKUP 2 conditions","Lookup","Lookup using two conditions",'=XLOOKUP(1,(Sheet2!A:A=A2)*(Sheet2!B:B=B2),Sheet2!C:C,"")','=IFERROR(INDEX(Sheet2!C:C,MATCH(1,(Sheet2!A:A=A2)*(Sheet2!B:B=B2),0)),"")',"Returns a value when two conditions match."],
+["XLOOKUP last match","Lookup","Find the last matching value",'=XLOOKUP(A2,Sheet2!A:A,Sheet2!B:B,"",0,-1)','=LOOKUP(2,1/(Sheet2!A:A=A2),Sheet2!B:B)',"Searches from bottom to top and returns the last match."],
+["VLOOKUP","Lookup","Find a value using VLOOKUP",'=IFERROR(VLOOKUP(A2,Sheet2!A:B,2,FALSE),"")','=XLOOKUP(A2,Sheet2!A:A,Sheet2!B:B,"")',"Looks for A2 in the first column and returns the second-column value."],
+["HLOOKUP","Lookup","Find a value horizontally",'=IFERROR(HLOOKUP(B1,Sheet2!A1:Z2,2,FALSE),"")','=XLOOKUP(B1,Sheet2!A1:Z1,Sheet2!A2:Z2,"")',"Looks across a row and returns the corresponding value."],
+["INDEX MATCH","Lookup","Use INDEX MATCH to find a value",'=IFERROR(INDEX(Sheet2!B:B,MATCH(A2,Sheet2!A:A,0)),"")','=XLOOKUP(A2,Sheet2!A:A,Sheet2!B:B,"")',"Flexible lookup using INDEX and MATCH."],
+["SUMIF","Math","Sum values for one condition",'=SUMIF(Sheet2!A:A,A2,Sheet2!B:B)','=SUMIFS(Sheet2!B:B,Sheet2!A:A,A2)',"Adds values in column B where column A equals A2."],
+["SUMIFS","Math","Sum values based on multiple conditions",'=SUMIFS(Sheet2!C:C,Sheet2!A:A,A2,Sheet2!B:B,B2)','=SUMPRODUCT((Sheet2!A:A=A2)*(Sheet2!B:B=B2)*Sheet2!C:C)',"Adds column C when both conditions match."],
+["COUNTIF","Math","Count records matching one condition",'=COUNTIF(Sheet2!A:A,A2)','=SUMPRODUCT(--(Sheet2!A:A=A2))',"Counts cells in column A equal to A2."],
+["COUNTIFS","Math","Count records matching multiple conditions",'=COUNTIFS(Sheet2!A:A,A2,Sheet2!B:B,B2)','=SUMPRODUCT((Sheet2!A:A=A2)*(Sheet2!B:B=B2))',"Counts rows satisfying both conditions."],
+["AVERAGEIF","Math","Average values for one condition",'=AVERAGEIF(Sheet2!A:A,A2,Sheet2!B:B)','=AVERAGEIFS(Sheet2!B:B,Sheet2!A:A,A2)',"Returns the average for matching records."],
+["AVERAGEIFS","Math","Average with multiple conditions",'=AVERAGEIFS(Sheet2!C:C,Sheet2!A:A,A2,Sheet2!B:B,B2)','=SUMIFS(Sheet2!C:C,Sheet2!A:A,A2,Sheet2!B:B,B2)/COUNTIFS(Sheet2!A:A,A2,Sheet2!B:B,B2)',"Averages values meeting multiple criteria."],
+["MAXIFS","Math","Find maximum with conditions",'=MAXIFS(Sheet2!C:C,Sheet2!A:A,A2)','=MAX(FILTER(Sheet2!C:C,Sheet2!A:A=A2))',"Returns the largest value meeting the condition."],
+["MINIFS","Math","Find minimum with conditions",'=MINIFS(Sheet2!C:C,Sheet2!A:A,A2)','=MIN(FILTER(Sheet2!C:C,Sheet2!A:A=A2))',"Returns the smallest value meeting the condition."],
+["SUMPRODUCT","Math","Calculate a conditional total",'=SUMPRODUCT((A2:A100="Yes")*B2:B100)','=SUMIFS(B2:B100,A2:A100,"Yes")',"Multiplies condition results by values and totals them."],
+["ROUND","Math","Round a number to 2 decimals",'=ROUND(A2,2)','=MROUND(A2,0.01)',"Rounds A2 to two decimal places."],
+["ROUNDUP","Math","Always round up",'=ROUNDUP(A2,2)','=CEILING(A2,0.01)',"Rounds a number upward to two decimal places."],
+["ROUNDDOWN","Math","Always round down",'=ROUNDDOWN(A2,2)','=FLOOR(A2,0.01)',"Rounds a number downward to two decimal places."],
+["ABS","Math","Convert a number to positive",'=ABS(A2)','=IF(A2<0,-A2,A2)',"Returns the absolute value."],
+["MOD","Math","Find the remainder",'=MOD(A2,B2)','=A2-B2*INT(A2/B2)',"Returns the remainder after division."],
+["LARGE","Math","Find the 2nd largest value",'=LARGE(A2:A100,2)','=MAX(FILTER(A2:A100,A2:A100<MAX(A2:A100)))',"Returns the nth largest value."],
+["SMALL","Math","Find the 2nd smallest value",'=SMALL(A2:A100,2)','=MIN(FILTER(A2:A100,A2:A100>MIN(A2:A100)))',"Returns the nth smallest value."],
+["IF","Logic","Check whether two values are equal",'=IF(A2=B2,"Yes","No")','=IF(EXACT(A2,B2),"Yes","No")',"Returns Yes when A2 and B2 are equal, otherwise No."],
+["IFS","Logic","Test multiple conditions",'=IFS(A2>=90,"A",A2>=75,"B",A2>=60,"C",TRUE,"D")','=IF(A2>=90,"A",IF(A2>=75,"B",IF(A2>=60,"C","D")))',"Tests several conditions in order."],
+["IFERROR","Logic","Hide formula errors",'=IFERROR(A2/B2,"")','=IF(ISERROR(A2/B2),"",A2/B2)',"Returns blank instead of an error."],
+["IFNA","Logic","Handle #N/A only",'=IFNA(XLOOKUP(A2,Sheet2!A:A,Sheet2!B:B),"Not found")','=IFERROR(XLOOKUP(A2,Sheet2!A:A,Sheet2!B:B),"Not found")',"Handles #N/A while leaving other errors visible."],
+["AND","Logic","Check if all conditions are true",'=IF(AND(A2>0,B2="Yes"),"OK","No")','=IF((A2>0)*(B2="Yes"),"OK","No")',"Returns OK only when both conditions are true."],
+["OR","Logic","Check if any condition is true",'=IF(OR(A2="Yes",B2="Yes"),"Yes","No")','=IF((A2="Yes")+(B2="Yes"),"Yes","No")',"Returns Yes when either condition is true."],
+["NOT","Logic","Reverse a logical test",'=NOT(A2="Yes")','=A2<>"Yes"',"Reverses TRUE to FALSE and FALSE to TRUE."],
+["FILTER","Dynamic","Filter rows by a condition",'=FILTER(A2:C100,C2:C100="Open","No records")','=IFERROR(FILTER(A2:C100,C2:C100="Open"),"No records")',"Returns only rows meeting the condition."],
+["FILTER 2 conditions","Dynamic","Filter using two conditions",'=FILTER(A2:D100,(B2:B100="Open")*(C2:C100>100),"No records")','=FILTER(A2:D100,(B2:B100="Open")+(C2:C100>100),"No records")',"Filters rows where both conditions are true."],
+["UNIQUE","Dynamic","Get unique values",'=UNIQUE(A2:A100)','=SORT(UNIQUE(A2:A100))',"Returns each distinct value once."],
+["SORT","Dynamic","Sort a range",'=SORT(A2:C100,2,1)','=SORTBY(A2:C100,B2:B100,1)',"Sorts the range by its second column ascending."],
+["SORTBY","Dynamic","Sort by another range",'=SORTBY(A2:C100,C2:C100,-1)','=SORT(A2:C100,3,-1)',"Sorts rows using another range."],
+["SEQUENCE","Dynamic","Generate sequential numbers",'=SEQUENCE(100,1,1,1)','=ROW(A1:A100)',"Creates a sequence of 1 to 100."],
+["TRANSPOSE","Dynamic","Convert rows to columns",'=TRANSPOSE(A2:D2)','=TRANSPOSE(A2:A5)',"Changes rows into columns or columns into rows."],
+["TAKE","Dynamic","Take first 10 rows",'=TAKE(A2:D100,10)','=INDEX(A2:D100,SEQUENCE(10),SEQUENCE(,4))',"Returns the first requested rows or columns."],
+["DROP","Dynamic","Remove first 2 rows",'=DROP(A2:D100,2)','=A4:D100',"Drops the first two rows from a range."],
+["CHOOSECOLS","Dynamic","Select specific columns",'=CHOOSECOLS(A2:F100,1,3,6)','=HSTACK(A2:A100,C2:C100,F2:F100)',"Returns only selected columns."],
+["HSTACK","Dynamic","Join columns side by side",'=HSTACK(A2:A100,C2:C100)','=CHOOSE({1,2},A2:A100,C2:C100)',"Combines arrays horizontally."],
+["VSTACK","Dynamic","Stack tables vertically",'=VSTACK(A2:C20,A25:C40)','=FILTER(VSTACK(A2:C20,A25:C40),VSTACK(A2:A20,A25:A40)<>"")',"Combines arrays vertically."],
+["LEFT","Text","Extract first 5 characters",'=LEFT(A2,5)','=LEFT(A2,FIND(" ",A2&" ")-1)',"Returns characters from the left side."],
+["RIGHT","Text","Extract last 5 characters",'=RIGHT(A2,5)','=RIGHT(A2,LEN(A2)-FIND("@",SUBSTITUTE(A2,"@","@",LEN(A2)-LEN(SUBSTITUTE(A2,"@","")))))',"Returns characters from the right side."],
+["MID","Text","Extract text from the middle",'=MID(A2,3,5)','=TEXTBEFORE(TEXTAFTER(A2,"-"),"-")',"Returns a specified number of characters from the middle."],
+["LEN","Text","Count characters in a cell",'=LEN(A2)','=LEN(TRIM(A2))',"Counts characters including spaces."],
+["TRIM","Text","Remove extra spaces",'=TRIM(A2)','=CLEAN(TRIM(A2))',"Removes extra spaces between words and leading/trailing spaces."],
+["CLEAN","Text","Remove non-printing characters",'=CLEAN(A2)','=TRIM(CLEAN(A2))',"Removes non-printing characters from text."],
+["UPPER","Text","Convert text to uppercase",'=UPPER(A2)','=PROPER(LOWER(A2))',"Converts all letters to uppercase."],
+["LOWER","Text","Convert text to lowercase",'=LOWER(A2)','=LOWER(TRIM(A2))',"Converts all letters to lowercase."],
+["PROPER","Text","Capitalize each word",'=PROPER(A2)','=TEXTJOIN(" ",TRUE,PROPER(TEXTSPLIT(A2," ")))',"Capitalizes the first letter of each word."],
+["CONCAT","Text","Join two cells",'=CONCAT(A2,B2)','=A2&B2',"Joins text values."],
+["TEXTJOIN","Text","Join cells with commas",'=TEXTJOIN(", ",TRUE,A2:A10)','=CONCAT(TEXT(A2:A10,"@"))',"Joins multiple cells with a delimiter and ignores blanks."],
+["& concatenate","Text","Combine two cells with a space",'=A2&" "&B2','=CONCAT(A2," ",B2)',"Combines text values with a space."],
+["SUBSTITUTE","Text","Replace text in a cell",'=SUBSTITUTE(A2,"old","new")','=REPLACE(A2,FIND("old",A2),3,"new")',"Replaces specified text."],
+["REPLACE","Text","Replace characters by position",'=REPLACE(A2,1,3,"ABC")','=SUBSTITUTE(A2,LEFT(A2,3),"ABC",1)',"Replaces a specified number of characters."],
+["FIND","Text","Find text position case-sensitive",'=FIND("@",A2)','=SEARCH("@",A2)',"Returns the position of one text string inside another."],
+["SEARCH","Text","Find text position",'=SEARCH("abc",A2)','=FIND("abc",LOWER(A2))',"Finds text position without case sensitivity."],
+["TEXTBEFORE","Text","Get text before a delimiter",'=TEXTBEFORE(A2,"-")','=LEFT(A2,FIND("-",A2&"-")-1)',"Returns text before the first delimiter."],
+["TEXTAFTER","Text","Get text after a delimiter",'=TEXTAFTER(A2,"-")','=MID(A2,FIND("-",A2)+1,LEN(A2))',"Returns text after the first delimiter."],
+["TEXTSPLIT","Text","Split text into columns",'=TEXTSPLIT(A2,",")','=FILTERXML("<t><s>"&SUBSTITUTE(A2,",","</s><s>")&"</s></t>","//s")',"Splits text using a delimiter."],
+["VALUE","Text","Convert text number to number",'=VALUE(A2)','=--A2',"Converts numeric text into a number."],
+["TEXT","Text","Format a number as text",'=TEXT(A2,"0.00")','=FIXED(A2,2,TRUE)',"Formats a value as text."],
+["DATE","Date","Create a date from year month day",'=DATE(A2,B2,C2)','=DATEVALUE(A2&"-"&B2&"-"&C2)',"Builds a valid Excel date."],
+["TODAY","Date","Get today's date",'=TODAY()','=INT(NOW())',"Returns the current date."],
+["NOW","Date","Get current date and time",'=NOW()','=TODAY()+TIME(HOUR(NOW()),MINUTE(NOW()),SECOND(NOW()))',"Returns the current date and time."],
+["YEAR","Date","Extract year from date",'=YEAR(A2)','=TEXT(A2,"yyyy")',"Returns the year."],
+["MONTH","Date","Extract month from date",'=MONTH(A2)','=TEXT(A2,"mm")',"Returns the month number."],
+["DAY","Date","Extract day from date",'=DAY(A2)','=VALUE(TEXT(A2,"dd"))',"Returns the day number."],
+["WEEKDAY","Date","Get weekday number",'=WEEKDAY(A2,2)','=WEEKNUM(A2,2)',"Returns the weekday number with Monday as 1."],
+["WEEKNUM","Date","Get week number",'=WEEKNUM(A2,2)','=ISOWEEKNUM(A2)',"Returns the week number."],
+["EOMONTH","Date","Get month end date",'=EOMONTH(A2,0)','=DATE(YEAR(A2),MONTH(A2)+1,0)',"Returns the last day of the month."],
+["EDATE","Date","Add months to a date",'=EDATE(A2,3)','=DATE(YEAR(A2),MONTH(A2)+3,DAY(A2))',"Moves a date by a number of months."],
+["DATEDIF","Date","Calculate age in years",'=DATEDIF(A2,TODAY(),"Y")','=YEAR(TODAY())-YEAR(A2)-IF(DATE(YEAR(TODAY()),MONTH(A2),DAY(A2))>TODAY(),1,0)',"Calculates completed years between two dates."],
+["DAYS","Date","Find days between two dates",'=DAYS(B2,A2)','=B2-A2',"Returns the number of days between dates."],
+["NETWORKDAYS","Date","Calculate working days",'=NETWORKDAYS(A2,B2)','=NETWORKDAYS.INTL(A2,B2,1)',"Counts weekdays between two dates."],
+["NETWORKDAYS holidays","Date","Calculate working days excluding holidays",'=NETWORKDAYS(A2,B2,H2:H20)','=NETWORKDAYS.INTL(A2,B2,1,H2:H20)',"Counts working days while excluding listed holidays."],
+["WORKDAY","Date","Find a date after working days",'=WORKDAY(A2,10)','=WORKDAY.INTL(A2,10,1)',"Returns a date after a number of workdays."],
+["WORKDAY holidays","Date","Find workday excluding holidays",'=WORKDAY(A2,10,H2:H20)','=WORKDAY.INTL(A2,10,1,H2:H20)',"Adds workdays while excluding holidays."],
+["YEARFRAC","Date","Calculate fraction of a year",'=YEARFRAC(A2,B2)','=DATEDIF(A2,B2,"D")/365',"Returns the fraction of a year between dates."],
+["MONTH difference","Date","Calculate complete months between dates",'=DATEDIF(A2,B2,"M")','=YEARFRAC(A2,B2)*12',"Returns completed months between two dates."],
+["Duplicate flag","Data","Flag duplicate values",'=IF(COUNTIF($A$2:A2,A2)>1,"Duplicate","")','=IF(COUNTIF(A:A,A2)>1,"Duplicate","Unique")',"Flags repeated values."],
+["Duplicate unique flag","Data","Flag only the first occurrence",'=IF(COUNTIF($A$2:A2,A2)=1,"Unique","Duplicate")','=IF(MATCH(A2,$A$2:$A$100,0)=ROW(A1),"Unique","Duplicate")',"Marks the first occurrence as Unique."],
+["Missing check","Data","Check if an ID is missing from another list",'=IF(COUNTIF(Sheet2!A:A,A2)=0,"Missing","Found")','=IF(ISNA(XMATCH(A2,Sheet2!A:A)),"Missing","Found")',"Checks whether A2 exists in another column."],
+["Compare columns","Data","Compare two columns",'=IF(A2=B2,"Match","Different")','=EXACT(A2,B2)',"Compares two cells."],
+["Missing from column B","Data","Find values in A not in B",'=FILTER(A2:A100,COUNTIF(B2:B100,A2:A100)=0,"None")','=UNIQUE(FILTER(A2:A100,ISNA(XMATCH(A2:A100,B2:B100))))',"Returns values present in A but missing from B."],
+["Common values","Data","Find values common to two lists",'=FILTER(A2:A100,COUNTIF(B2:B100,A2:A100)>0,"None")','=FILTER(UNIQUE(A2:A100),ISNUMBER(XMATCH(UNIQUE(A2:A100),B2:B100)))',"Returns values found in both lists."],
+["Rank","Data","Rank a number",'=RANK.EQ(A2,$A$2:$A$100,0)','=COUNTIF($A$2:$A$100,">"&A2)+1',"Returns the rank of a value."],
+["Percentage","Math","Calculate percentage of total",'=A2/B2','=IFERROR(A2/B2,0)',"Calculates A2 as a percentage of B2."],
+["Percentage change","Math","Calculate percentage increase or decrease",'=IFERROR((B2-A2)/A2,0)','=IFERROR(B2/A2-1,0)',"Calculates percentage change from A2 to B2."],
+["Increase amount","Math","Calculate amount after percentage increase",'=A2*(1+B2)','=A2+A2*B2',"Adds the percentage in B2 to A2."],
+["Decrease amount","Math","Calculate amount after percentage decrease",'=A2*(1-B2)','=A2-A2*B2',"Subtracts the percentage in B2 from A2."],
+["Average","Math","Calculate average",'=AVERAGE(A2:A100)','=SUM(A2:A100)/COUNT(A2:A100)',"Returns the arithmetic average."],
+["Median","Math","Find median",'=MEDIAN(A2:A100)','=PERCENTILE.INC(A2:A100,0.5)',"Returns the middle value."],
+["Mode","Math","Find most common value",'=MODE.SNGL(A2:A100)','=INDEX(A2:A100,MODE(MATCH(A2:A100,A2:A100,0)))',"Returns the most frequently occurring number."],
+["SUBTOTAL","Math","Sum filtered rows only",'=SUBTOTAL(9,B2:B100)','=AGGREGATE(9,5,B2:B100)',"Sums visible cells in a filtered list."],
+["AGGREGATE","Math","Ignore errors while calculating",'=AGGREGATE(9,6,B2:B100)','=SUM(IFERROR(B2:B100,0))',"Calculates while ignoring errors."],
+["ISBLANK","Logic","Check if a cell is blank",'=IF(ISBLANK(A2),"Blank","Not blank")','=IF(A2="","Blank","Not blank")',"Checks whether a cell is blank."],
+["ISNUMBER","Logic","Check if a value is a number",'=IF(ISNUMBER(A2),"Number","Not number")','=IFERROR(IF(A2*1=A2,"Number","Not number"),"Not number")',"Checks whether the value is numeric."],
+["ISTEXT","Logic","Check if a value is text",'=IF(ISTEXT(A2),"Text","Not text")','=IF(AND(A2<>"",NOT(ISNUMBER(A2))),"Text","Not text")',"Checks whether a value is text."],
+["ISERROR","Logic","Check for any error",'=IF(ISERROR(A2),"Error","OK")','=IFERROR("OK","Error")',"Checks whether a formula result is an error."],
+["ISNA","Logic","Check specifically for #N/A",'=IF(ISNA(A2),"Not found","Found")','=IFERROR(IF(XMATCH(A2,B:B),"Found"),"Not found")',"Checks for #N/A."],
+["ROW number","Data","Get row number",'=ROW(A2)','=ROWS($A$1:A2)',"Returns the row number."],
+["Column number","Data","Get column number",'=COLUMN(C2)','=COLUMNS($A:A)',"Returns the column number."],
+["Running total","Math","Create a running total",'=SUM($B$2:B2)','=B2+IFERROR(C1,0)',"Creates a cumulative total as you fill down."],
+["Running count","Data","Create a running count",'=COUNTIF($A$2:A2,"<>")','=ROWS($A$2:A2)-COUNTBLANK($A$2:A2)',"Counts nonblank records progressively."],
+["Random number","Math","Generate random number",'=RANDBETWEEN(1,100)','=INT(RAND()*100)+1',"Generates a random integer."],
+["Random sample","Dynamic","Pick a random item from a list",'=INDEX(A2:A100,RANDBETWEEN(1,COUNTA(A2:A100)))','=TAKE(SORTBY(A2:A100,RANDARRAY(ROWS(A2:A100))),1)',"Returns a random item."],
+["Remove duplicates","Data","Create a duplicate-free list",'=UNIQUE(A2:A100)','=SORT(UNIQUE(A2:A100))',"Creates a list without duplicates."],
+["Blank to zero","Logic","Show zero instead of blank",'=IF(A2="",0,A2)','=N(A2)',"Converts a blank to zero."],
+["Zero to blank","Logic","Show blank instead of zero",'=IF(A2=0,"",A2)','=IF(A2<>0,A2,"")',"Hides zero values."],
+["Text to date","Date","Convert text to a date",'=DATEVALUE(A2)','=--A2',"Converts recognizable date text into an Excel date."],
+["Date to text","Date","Format date as text",'=TEXT(A2,"dd-mm-yyyy")','=TEXT(A2,"dd/mm/yyyy")',"Displays a date in the requested text format."],
+["Extract numbers","Text","Extract numbers from text",'=LET(x,A2,TEXTJOIN("",TRUE,IFERROR(MID(x,SEQUENCE(LEN(x)),1)*1,"")))','=TEXTJOIN("",TRUE,IFERROR(MID(A2,SEQUENCE(LEN(A2)),1)*1,""))',"Extracts numeric characters from a text string in modern Excel."],
+["Extract letters","Text","Extract letters from text",'=LET(x,A2,TEXTJOIN("",TRUE,IF(ISERROR(MID(x,SEQUENCE(LEN(x)),1)*1),MID(x,SEQUENCE(LEN(x)),1),"")))','=TEXTJOIN("",TRUE,IFERROR(IF(MID(A2,SEQUENCE(LEN(A2)),1)*1,"",MID(A2,SEQUENCE(LEN(A2)),1)),""))',"Extracts non-numeric characters in modern Excel."],
+["First word","Text","Extract first word",'=TEXTBEFORE(TRIM(A2)," ")','=LEFT(TRIM(A2),FIND(" ",TRIM(A2)&" ")-1)',"Returns the first word."],
+["Last word","Text","Extract last word",'=TEXTAFTER(TRIM(A2)," ",-1)','=TRIM(RIGHT(SUBSTITUTE(TRIM(A2)," ",REPT(" ",100)),100))',"Returns the last word."],
+["Email domain","Text","Extract domain from email",'=TEXTAFTER(A2,"@")','=RIGHT(A2,LEN(A2)-FIND("@",A2))',"Returns the part after @."],
+["Email username","Text","Extract username from email",'=TEXTBEFORE(A2,"@")','=LEFT(A2,FIND("@",A2)-1)',"Returns the part before @."],
+["First nonblank","Lookup","Find first nonblank value",'=XLOOKUP(TRUE,A2:A100<>"",A2:A100,"")','=INDEX(A2:A100,MATCH(TRUE,A2:A100<>"",0))',"Returns the first nonblank cell."],
+["Last nonblank","Lookup","Find last nonblank value",'=XLOOKUP(TRUE,A2:A100<>"",A2:A100,"",0,-1)','=LOOKUP(2,1/(A2:A100<>""),A2:A100)',"Returns the last nonblank cell."],
+["Sum visible filtered","Math","Sum only visible rows",'=SUBTOTAL(109,B2:B100)','=AGGREGATE(9,5,B2:B100)',"Sums visible cells while ignoring filtered-out rows."],
+["Count visible filtered","Data","Count visible rows",'=SUBTOTAL(103,A2:A100)','=AGGREGATE(3,5,A2:A100)',"Counts visible nonblank cells."],
+["Conditional formatting duplicate","Data","Formula for duplicate conditional formatting",'=COUNTIF($A:$A,A2)>1','=COUNTIF($A$2:$A$100,A2)>1',"Use this formula in Conditional Formatting to highlight duplicates."],
+["Conditional formatting missing","Data","Highlight missing IDs",'=COUNTIF($B:$B,A2)=0','=ISNA(XMATCH(A2,$B:$B))',"Use this in Conditional Formatting to highlight values absent from column B."],
+["Lookup with blank","Lookup","Lookup and return blank if not found",'=IFERROR(XLOOKUP(A2,Sheet2!A:A,Sheet2!B:B),"")','=XLOOKUP(A2,Sheet2!A:A,Sheet2!B:B,"")',"Returns blank instead of an error when no match exists."],
+["SUMIFS blank","Math","SUMIFS returning blank when no match",'=IF(COUNTIFS(Sheet2!A:A,A2)=0,"",SUMIFS(Sheet2!B:B,Sheet2!A:A,A2))','=IFERROR(SUMIFS(Sheet2!B:B,Sheet2!A:A,A2),"")',"Shows blank if no matching records exist."],
+["Fast SUMIFS large data","Math","Fast SUMIFS for 50000 rows",'=SUMIFS(Sheet2!$BU$2:$BU$50001,Sheet2!$DP$2:$DP$50001,A3)','=SUMPRODUCT((Sheet2!$DP$2:$DP$50001=A3)*Sheet2!$BU$2:$BU$50001)',"Uses bounded ranges, which can be faster than full-column references in large workbooks."],
+["Fast XLOOKUP large data","Lookup","Fast XLOOKUP for 50000 rows",'=XLOOKUP(A3,Sheet2!$A$2:$A$50001,Sheet2!$B$2:$B$50001,"")','=IFERROR(INDEX(Sheet2!$B$2:$B$50001,MATCH(A3,Sheet2!$A$2:$A$50001,0)),"")',"Uses bounded ranges for large datasets."],
+["Two sheet compare","Data","Check if ID exists in another sheet",'=IF(COUNTIF(Sheet2!A:A,A2)>0,"Found","Missing")','=IF(ISNUMBER(XMATCH(A2,Sheet2!A:A)),"Found","Missing")',"Checks whether an ID exists on another sheet."],
+["Sheet match sum","Math","Sum another sheet by ID",'=SUMIFS(Sheet2!$B:$B,Sheet2!$A:$A,A2)','=IFERROR(XLOOKUP(A2,Sheet2!A:A,Sheet2!B:B,0),0)',"Returns the total associated with an ID from another sheet."],
+["Sheet match text","Lookup","Return text from another sheet",'=XLOOKUP(A2,Sheet2!A:A,Sheet2!C:C,"")','=IFERROR(INDEX(Sheet2!C:C,MATCH(A2,Sheet2!A:A,0)),"")',"Returns matching text from another sheet."],
+["Date filter","Dynamic","Filter records by date",'=FILTER(A2:D100,(B2:B100>=F1)*(B2:B100<=G1),"No records")','=FILTER(A2:D100,ISNUMBER(MATCH(B2:B100,SEQUENCE(G1-F1+1,,F1),0)),"No records")',"Returns rows whose date falls between two dates."],
+["Month total","Math","Sum values for a month",'=SUMIFS(B:B,A:A,">="&EOMONTH(D2,-1)+1,A:A,"<="&EOMONTH(D2,0))','=SUMPRODUCT((MONTH(A2:A100)=MONTH(D2))*(YEAR(A2:A100)=YEAR(D2))*B2:B100)',"Sums values whose dates fall in the same month as D2."],
+["Year total","Math","Sum values for a year",'=SUMIFS(B:B,A:A,">="&DATE(D2,1,1),A:A,"<"&DATE(D2+1,1,1))','=SUMPRODUCT((YEAR(A2:A100)=D2)*B2:B100)',"Sums values for the year in D2."],
+["Current month flag","Date","Check if date is in current month",'=IF(AND(A2>=EOMONTH(TODAY(),-1)+1,A2<=EOMONTH(TODAY(),0)),"Current month","Other")','=IF(TEXT(A2,"yyyymm")=TEXT(TODAY(),"yyyymm"),"Current month","Other")',"Checks whether a date belongs to the current month."],
+["Age","Date","Calculate age from date of birth",'=DATEDIF(A2,TODAY(),"Y")','=YEAR(TODAY())-YEAR(A2)-IF(DATE(YEAR(TODAY()),MONTH(A2),DAY(A2))>TODAY(),1,0)',"Calculates completed age in years."],
+["Days overdue","Date","Calculate overdue days",'=MAX(0,TODAY()-A2)','=IF(A2<TODAY(),TODAY()-A2,0)',"Counts days after a due date."],
+["Status by date","Logic","Show Open/Closed based on date",'=IF(TODAY()>B2,"Closed","Open")','=IF(B2>=TODAY(),"Open","Closed")',"Returns a status based on today's date and a closing date."]
+];
+
+let activeCategory="All";
+
+function exampleText(t){document.getElementById("question").value=t;generateFormula();}
+
+function copyFormula(id){
+  navigator.clipboard.writeText(document.getElementById(id).textContent).then(()=>alert("Formula copied!"));
+}
+
+function generateFormula(){
+  const q=document.getElementById("question").value.toLowerCase().trim();
+  if(!q){alert("Please describe what you want to do in Excel.");return;}
+  let best=formulas[0], score=-1;
+  const weights={
+    "xlookup": ["xlookup","lookup","match","find","another sheet","return"],
+    "vlookup":["vlookup"],
+    "sumifs":["sum","add","total","amount"],
+    "countifs":["count","number of records"],
+    "filter":["filter"],
+    "unique":["unique","distinct","duplicates remove"],
+    "trim":["space","spaces","trim"],
+    "compare":["compare","same","different"],
+    "missing":["missing","not in","absent"],
+    "date":["date","days","month","year","age","working days","weekday"],
+    "text":["text","word","character","email","extract","uppercase","lowercase"],
+    "duplicate":["duplicate","repeated"],
+    "percentage":["percentage","percent","increase","decrease","growth"],
+    "error":["error","n/a","not found"]
+  };
+  formulas.forEach(f=>{
+    let s=0, hay=(f[0]+" "+f[1]+" "+f[2]).toLowerCase();
+    q.split(/\s+/).forEach(w=>{if(w.length>2 && hay.includes(w))s+=1;});
+    Object.keys(weights).forEach(k=>{if(q.includes(k))weights[k].forEach(w=>{if(hay.includes(w))s+=3;});});
+    if(hay.includes(q))s+=10;
+    if(s>score){score=s;best=f;}
+  });
+  // Strong direct phrase overrides
+  if(q.includes("sumifs")||q.includes("sum based on")||q.includes("add amounts")) best=formulas.find(x=>x[0]=="SUMIFS");
+  if(q.includes("countifs")||q.includes("count records")) best=formulas.find(x=>x[0]=="COUNTIFS");
+  if(q.includes("vlookup")) best=formulas.find(x=>x[0]=="VLOOKUP");
+  if(q.includes("xlookup")||q.includes("matching id")||q.includes("matching value")) best=formulas.find(x=>x[0]=="XLOOKUP");
+  if(q.includes("remove extra spaces")) best=formulas.find(x=>x[0]=="TRIM");
+  if(q.includes("compare two columns")) best=formulas.find(x=>x[0]=="Compare columns");
+  if(q.includes("missing")&&q.includes("column")) best=formulas.find(x=>x[0]=="Missing from column B");
+  if(q.includes("duplicate")) best=formulas.find(x=>x[0]=="Duplicate flag");
+  document.getElementById("formulaType").textContent=best[0];
+  document.getElementById("formula").textContent=best[3];
+  document.getElementById("alternative").textContent=best[4];
+  document.getElementById("explanation").textContent=best[5];
+  document.getElementById("result").style.display="block";
+  document.getElementById("result").scrollIntoView({behavior:"smooth",block:"start"});
+}
+
+function renderCategories(){
+  const cats=["All",...new Set(formulas.map(x=>x[1]))];
+  document.getElementById("categories").innerHTML=cats.map(c=>`<button class="cat ${c===activeCategory?'active':''}" onclick="setCategory('${c}')">${c}</button>`).join("");
+}
+function setCategory(c){activeCategory=c;renderCategories();renderTools();}
+function renderTools(){
+  const list=activeCategory==="All"?formulas:formulas.filter(x=>x[1]===activeCategory);
+  document.getElementById("tools").innerHTML=list.map((f,i)=>`<div class="tool" onclick='useFormula(${JSON.stringify(f[2])})'><strong>${f[0]}</strong><small>${f[2]}</small></div>`).join("");
+}
+function useFormula(q){document.getElementById("question").value=q;generateFormula();}
+
+renderCategories();
+renderTools();
+</script>
+
+<!-- SEO / HELP SECTION -->
+<section class="seo-help-section" style="max-width:1100px;margin:45px auto 30px;padding:28px 20px;background:#ffffff;border:1px solid #e5e7eb;border-radius:15px;">
+  <h2 style="font-size:28px;margin:0 0 10px;color:#17202a;">Popular Excel Formula Guides</h2>
+  <p style="color:#475569;line-height:1.7;margin:0 0 20px;">Learn practical Excel formulas with simple examples and explanations.</p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;">
+    <a href="xlookup-formula.html">XLOOKUP — Find matching data</a>
+    <a href="vlookup-formula.html">VLOOKUP — Search a table</a>
+    <a href="sumifs-formula.html">SUMIFS — Sum by conditions</a>
+    <a href="countifs-formula.html">COUNTIFS — Count by conditions</a>
+    <a href="if-ifs-formula.html">IF / IFS — Conditional results</a>
+    <a href="index-match-formula.html">INDEX MATCH — Flexible lookups</a>
+    <a href="iferror-formula.html">IFERROR — Handle errors</a>
+    <a href="unique-formula.html">UNIQUE — Extract unique values</a>
+    <a href="filter-formula.html">FILTER — Filter data dynamically</a>
+    <a href="compare-two-columns.html">Compare Two Columns</a>
+  </div>
+</section>
+
+<section class="seo-help-section" style="max-width:1100px;margin:25px auto 40px;padding:28px 20px;background:#ffffff;border:1px solid #e5e7eb;border-radius:15px;">
+  <h2 style="font-size:26px;margin:0 0 10px;color:#17202a;">How to Use Excel Formula Helper</h2>
+  <p style="color:#475569;line-height:1.7;margin:0;">
+    Describe what you want Excel to calculate or find, generate a formula, copy it into your workbook,
+    and test the result with your own data. You can also search the formula library when you already know
+    the type of formula you need.
+  </p>
+</section>
+
+<section class="seo-help-section" style="max-width:1100px;margin:25px auto 40px;padding:28px 20px;background:#ffffff;border:1px solid #e5e7eb;border-radius:15px;">
+  <h2 style="font-size:26px;margin:0 0 10px;color:#17202a;">Useful Excel Formula Tips</h2>
+  <ul style="color:#475569;line-height:1.8;margin:0;padding-left:22px;">
+    <li>Use absolute references such as <strong>$A$1</strong> when a reference should stay fixed.</li>
+    <li>Use <strong>IFERROR</strong> when you need a controlled result for formula errors.</li>
+    <li>Use <strong>XLOOKUP</strong> for flexible lookup tasks in supported Excel versions.</li>
+    <li>Use <strong>SUMIFS</strong> and <strong>COUNTIFS</strong> for multiple conditions.</li>
+    <li>Test formulas with sample data before applying them to large workbooks.</li>
+  </ul>
+</section>
+
+<nav aria-label="Site information" style="max-width:1100px;margin:25px auto 40px;text-align:center;line-height:2;">
+  <a href="about.html" style="margin:0 8px;">About</a> |
+  <a href="contact.html" style="margin:0 8px;">Contact</a> |
+  <a href="privacy.html" style="margin:0 8px;">Privacy</a> |
+  <a href="terms.html" style="margin:0 8px;">Terms</a> |
+  <a href="disclaimer.html" style="margin:0 8px;">Disclaimer</a>
+</nav>
+
 </body>
 </html>
